@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!--HEADER-->
+    <header class="header">
+        <h1 class="header__title">Resta<span>urant</span></h1>
+        <ul class="header__menus">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="header__menu-toggle">
+            <i class='bx bx-menu'></i>
+            <i class='bx bx-x'></i>
+        </div>
+    </header>
+
+    <!--HERO-->
+    <section class="menu-hero section-menu">
+        <h1 class="section-title">Our <span>Menu</span></h1>
+        <p class="section-desc">choose your favourite dishes</p>
+    </section>
+
+    <!--FILTER-->
+    <section class="menu-content section-menu">
+        <div class="menu-filter">
+            <button class="menu-filter__btn primary-button" data-filter="all">All</button>
+            <button class="menu-filter__btn light-button" data-filter="main-course">Main Course</button>
+            <button class="menu-filter__btn light-button" data-filter="drinks">Drinks</button>
+            <button class="menu-filter__btn light-button" data-filter="desserts">Desserts</button>
+        </div>
+
+        <!--MENU CARDS-->
+        <div class="menu-grid">
+
+            <!--CARD-->
+            <div class="menu-card" data-category="main-course">
+                <img src="images/roasted-chicken.png" alt="Roasted Chicken">
+                <div class="menu-card__info">
+                    <h3 class="menu-card__title">Roasted Chicken</h3>
+                    <p class="menu-card__desc">Ayam panggang dengan rempah istimewa</p>
+                    <div class="menu-card__footer">
+                        <h2 class="menu-card__price">$3.90</h2>
+                        <button class="primary-button">
+                            <i class='bx bxs-cart'></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--CARD-->
+            <div class="menu-card" data-category="drinks">
+                <img src="images/seafood-noodles.png" alt="Seafood Noodle">
+                <div class="menu-card__info">
+                    <h3 class="menu-card__title">Seafood Noodle</h3>
+                    <p class="menu-card__desc">Mee dengan pelbagai jenis seafood segar</p>
+                    <div class="menu-card__footer">
+                        <h2 class="menu-card__price">$3.90</h2>
+                        <button class="primary-button">
+                            <i class='bx bxs-cart'></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--CARD-->
+            <div class="menu-card" data-category="desserts">
+                <img src="images/grilled-shrimp.png" alt="Grilled Shrimp">
+                <div class="menu-card__info">
+                    <h3 class="menu-card__title">Grilled Shrimp</h3>
+                    <p class="menu-card__desc">Udang bakar dengan sos special</p>
+                    <div class="menu-card__footer">
+                        <h2 class="menu-card__price">$3.90</h2>
+                        <button class="primary-button">
+                            <i class='bx bxs-cart'></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <h1 class="footer__title">Resta<span>urant</span></h1>
+        <ul class="footer__menus">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="footer__divider"></div>
+        <p class="footer__copyright">&copy; 2023 Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>

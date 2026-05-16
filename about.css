@@ -1,0 +1,151 @@
+/*HERO*/
+.about-hero {
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    min-height: 100dvh;
+    background: linear-gradient(to right, white, var(--background-primary-color));
+    flex-wrap: wrap;
+}
+
+.about-hero__content {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about-hero__image {
+    width: 90%;
+    max-width: 400px;
+}
+
+/*STATS*/
+.about-stats {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+    background: var(--primary-color);
+    padding-block: 60px;
+}
+
+.about-stats__item {
+    text-align: center;
+    color: white;
+}
+
+.about-stats__number {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.about-stats__desc {
+    font-size: 18px;
+    opacity: 0.85;
+    margin-top: 4px;
+}
+
+/*STORY*/
+.about-story {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap-reverse;
+    background: linear-gradient(to right, white, var(--background-primary-color));
+}
+
+.about-story__image {
+    width: 90%;
+    max-width: 350px;
+}
+
+.about-story__content {
+    max-width: 500px;
+}
+
+/*TEAM*/
+.about-team {
+    text-align: center;
+}
+
+.about-team__cards {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 48px;
+    flex-wrap: wrap;
+}
+
+.about-team__card {
+    border: 3px solid var(--border-primary-color);
+    border-radius: var(--medium-radius);
+    padding: 32px;
+    width: 250px;
+    transition: 300ms ease;
+    cursor: pointer;
+}
+
+.about-team__card:hover {
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+}
+
+.about-team__card:hover .about-team__card-avatar {
+    background: var(--transparent-025);
+}
+
+.about-team__card:hover .about-team__card-avatar i {
+    color: white;
+}
+
+.about-team__card-avatar {
+    background: var(--background-primary-color);
+    width: 80px;
+    height: 80px;
+    border-radius: 99px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    transition: 300ms ease;
+}
+
+.about-team__card-avatar i {
+    font-size: 40px;
+    color: var(--primary-color);
+    transition: 300ms ease;
+}
+
+.about-team__card-name {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.about-team__card-role {
+    opacity: 0.7;
+    font-size: 16px;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 768px) {
+    .about-hero {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about-stats {
+        gap: 32px;
+    }
+
+    .about-story {
+        flex-direction: column;
+    }
+}
